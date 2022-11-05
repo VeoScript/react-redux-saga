@@ -21,7 +21,7 @@ const App = () => {
         </div>
       )}
       {!isLoading && (
-        <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3 gap-4 w-full max-w-7xl">
+        <div className="grid grid-flow-row-dense grid-cols-1 md:grid-cols-3 grid-rows-3 gap-4 w-full max-w-7xl p-3">
           {news.map((item: { title: string, author: string, description: string, url: string, urlToImage: string, publishedAt: Date }, i: number) => (
             <a
               key={i}
